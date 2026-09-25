@@ -34,11 +34,7 @@ app = FastAPI(title="Cardiovascular Risk Predictor API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        origin.strip()
-        for origin in os.getenv("FRONTEND_ORIGINS", "http://localhost:5173").split(",")
-        if origin.strip()
-    ],
+    allow_origins=["https://cardio-risk-predictor-self.vercel.app"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
