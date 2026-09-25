@@ -6,7 +6,7 @@ import { NumberField, OptionPicker } from './components/Fields.jsx'
 import ResultPanel from './components/ResultPanel.jsx'
 import ModelInfoPanel from './components/ModelInfoPanel.jsx'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_URL = 'https://cardio-risk-api-v9k8.onrender.com'
 
 const STEPS = [{ lead: 'Lead I', label: 'Personal' }, { lead: 'Lead II', label: 'Vitals' }, { lead: 'Lead III', label: 'Labs' }, { lead: 'Lead V', label: 'Lifestyle' }]
 const initialForm = { age_years: 45, gender: 2, height: 170, weight: 75, ap_hi: 120, ap_lo: 80, cholesterol: 1, gluc: 1, smoke: 0, alco: 0, active: 1 }
